@@ -46,7 +46,7 @@ We have 3 Buttons: Cancel, Save and Save & Write Card
 
 Here we have a List of Settings from the settings-Service and its values.
 
-Every Listentry is the Name and an input-Field. 
+Every Listentry is the Name and an input-Field.
 
 We can edit and save (button appears after change) every setting selectively.
 
@@ -86,51 +86,67 @@ To rebuild the Website under ./dist, simply call build.sh or perform the steps i
 
 You need the Following CLI-Tools:
 
-* yarn
-* imagemin
-* pug
-* pug-lint
-* lessc
-* standard
-* imagemin
-* uglifycss
-* uglifyjs
+* [yarn](https://www.npmjs.com/package/yarn)
+* [pug](https://github.com/pugjs/pug-cli)
+* [pug-lint](https://www.npmjs.com/package/pug-lint)
+* [lessc](http://lesscss.org/)
+* [standard](https://github.com/standard/standard)
+* [imagemin](https://github.com/imagemin/imagemin-cli)
+* [uglifycss](https://github.com/fmarcia/UglifyCSS)
+* [uglifyjs](https://github.com/mishoo/UglifyJS)
 
-TODO: Add LINKS
-
-### Framework
+### JS-Framework
 
 * [Angular](https://angular.io/)
 
+## Authors
+
+* Dominik Sigmund <dominik.sigmund@webdad.eu>
+
+## License
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
 
 ---
 
 ## TODO
 
 * index.pug
-	* bootstrap
-	* navbar + colorscheme
-	* header -> Demo
+	* navbar -> player
 * templates
 	* start
-	* cards
-	* settings
+	* cards (table)
+	* settings (table with key, input(value), button(onChange))
 * controllers
 	* main
+		* connect to socket
+		* get now playing
 	* start
 	* karten tabelle
 	* einstellungen (inputs, save)
 * dataprovider
 		* Add urls
 		* Add Settings
-
-
-HEAD
-link(rel="apple-touch-icon", sizes="180x180", href="images/apple-touch-icon.png")
-link(rel="icon", type="image/png", sizes="32x32", href="images/favicon-32x32.png")
-link(rel="icon", type="image/png", sizes="16x16", href="images/favicon-16x16.png")
-link(rel="manifest", href="images/manifest.json")
-link(rel="mask-icon", href="images/safari-pinned-tab.svg", color="#8bc34a")
-link(rel="shortcut icon", href="images/favicon.ico")
-meta(name="msapplication-config", content="images/browserconfig.xml")
-meta(name="theme-color", content="#8bc34a")
