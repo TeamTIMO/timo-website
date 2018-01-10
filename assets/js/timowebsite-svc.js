@@ -10,6 +10,10 @@
         this.setURLSettings = function (url) {
           restURLSettings = url
         }
+        var restURLPlayer = '/'
+        this.setURLPlayer = function (url) {
+          restURLPlayer = url
+        }
         this.$get = function ($http) {
           return {
             entries: function () {
@@ -46,6 +50,36 @@
                 headers: {
                   'Content-Type': 'text/plain'
                 }
+              })
+            },
+            playerNow: function () {
+              return $http({
+                method: 'GET', url: restURLPlayer + '/now'
+              })
+            },
+            playerPlayPause: function () {
+              return $http({
+                method: 'PUT', url: restURLPlayer + '/playpause'
+              })
+            },
+            playerStop: function () {
+              return $http({
+                method: 'PUT', url: restURLPlayer + '/stop'
+              })
+            },
+            playerVolUp: function () {
+              return $http({
+                method: 'PUT', url: restURLPlayer + '/volup'
+              })
+            },
+            playerVolDown: function () {
+              return $http({
+                method: 'PUT', url: restURLPlayer + '/voldown'
+              })
+            },
+            playerPlayThis: function (entry) {
+              return $http({
+                method: 'POST', url: restURLPlayer + '/playthis', data: entry
               })
             }
           }

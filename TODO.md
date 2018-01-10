@@ -8,7 +8,7 @@
 
 * controllers
 	* main
-		* connect to socket
+		* connect to socket https://www.html5rocks.com/en/tutorials/frameworks/angular-websockets/
 		* get now playing
 		* set provider URLS
 		* set PlayerVars in rootScope

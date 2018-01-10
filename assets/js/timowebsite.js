@@ -4,6 +4,7 @@
     .config(['$routeProvider', 'timowebsiteDataProvider', function ($routeProvider, timowebsiteDataProvider) {
       timowebsiteDataProvider.setURLData('http://localhost/data')
       timowebsiteDataProvider.setURLSettings('http://localhost/settings')
+      timowebsiteDataProvider.setURLPlayer('http://localhost/player')
       $routeProvider
         .when('/start', {
           controller: 'timowebsite-Start',
