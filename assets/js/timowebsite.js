@@ -1,20 +1,20 @@
 /* global angular */
 ;(function () {
-  angular.module('timnowebsite', ['ngRoute', 'ui.bootstrap'])
+  angular.module('timowebsite', ['ngRoute', 'ui.bootstrap'])
     .config(['$routeProvider', function ($routeProvider) {
       $routeProvider
         .when('/start', {
-          controller: 'timnowebsite-Start',
+          controller: 'timowebsite-Start',
           controllerAs: 'ctrl',
           templateUrl: 'start'
         })
         .when('/cards', {
-          controller: 'timnowebsite-Cards',
+          controller: 'timowebsite-Cards',
           controllerAs: 'ctrl',
           templateUrl: 'cards'
         })
         .when('/settings', {
-          controller: 'timnowebsite-Settings',
+          controller: 'timowebsite-Settings',
           controllerAs: 'ctrl',
           templateUrl: 'settings'
         })

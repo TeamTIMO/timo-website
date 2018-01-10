@@ -1,9 +1,5 @@
 * index.pug
-	* navbar -> player
-
-* yarn / build
-  * 'ngRoute'
-  * 'ui.bootstrap'
+	* navbar -> player (what, play/pause, stop, vol-, vol+)
 
 * templates
 	* start
@@ -15,6 +11,7 @@
 		* connect to socket
 		* get now playing
 		* set provider URLS
+		* set PlayerVars in rootScope
 	* start
 	* karten tabelle
 	* einstellungen (inputs, save)

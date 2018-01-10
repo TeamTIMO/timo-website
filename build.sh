@@ -34,6 +34,8 @@ echo "--------------------"
 echo "=> Creating Client-JS"
 cp -a assets/js/. dist/js
 cp node_modules/angular/angular.min.js dist/js/angular.min.js
+cp node_modules/angular/angular-route.min.js dist/js/angular-route.min.js
+cp node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js dist/js/ui-bootstrap-tpls.js
 cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js/bootstrap.min.js
 cp node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js dist/js/bootstrap-material-design.min.js
 echo "=> Creating Client-JS OK"
