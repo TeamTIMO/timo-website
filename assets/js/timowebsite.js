@@ -1,7 +1,9 @@
 /* global angular */
 ;(function () {
   angular.module('timowebsite', ['ngRoute', 'ui.bootstrap'])
-    .config(['$routeProvider', function ($routeProvider) {
+    .config(['$routeProvider', 'timowebsiteDataProvider', function ($routeProvider, timowebsiteDataProvider) {
+      timowebsiteDataProvider.setURLData('http://localhost/data')
+      timowebsiteDataProvider.setURLSettings('http://localhost/settings')
       $routeProvider
         .when('/start', {
           controller: 'timowebsite-Start',

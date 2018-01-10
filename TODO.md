@@ -15,7 +15,3 @@
 	* start
 	* karten tabelle
 	* einstellungen (inputs, save)
-
-* dataprovider
-		* Add urls
-		* Add Settings

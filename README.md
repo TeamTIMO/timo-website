@@ -84,6 +84,12 @@ Navbar-Styling by [https://work.smarchal.com/twbscolor/](https://work.smarchal.c
 
 To rebuild the Website under ./dist, simply call build.sh or perform the steps in the file manually.
 
+You may also want to change the URLs of the Data and Settings Service. You can do this in this File:
+
+_assets/js/timowebsite.js_
+
+After the Changes you have to build the new file
+
 You need the Following CLI-Tools:
 
 * [yarn](https://www.npmjs.com/package/yarn)
