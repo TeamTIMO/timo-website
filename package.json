@@ -1,4 +1,10 @@
 {
+  "name": "timo-website",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "sh build.sh"
+  },
   "dependencies": {
     "angular": "^1.6.8",
     "angular-route": "^1.6.8",

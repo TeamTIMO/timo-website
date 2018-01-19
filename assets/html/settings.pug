@@ -1,5 +1,16 @@
-// - Template
-// - Table with three cols
-// - Left: Key
-// - Middle: Input
-// - Right: btn save, show on input change 
+h2 Settings
+table.table.table-striped
+  thead
+    tr
+      th Key
+      th Value
+      th *
+  tbody
+    tr(ng-repeat="item in settings")
+      td {{item.key}}
+      td 
+        input(id="item.key" value="item.value")
+      td 
+        button.btn(ng-show="item.changed" ng-click="item.save()")
+         span.glyphicon.glyphicon-disk(aria-hidden="true" title="Save Setting")
+          span  Save

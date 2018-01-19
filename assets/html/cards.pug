@@ -1,3 +1,17 @@
-// - Template
-// - Table
-// - Floating Button Down right
+h2 Cards
+table.table.table-striped
+  thead
+    tr
+      th Comment
+      th Type
+      th Link
+      th *
+  tbody
+    tr(ng-repeat="item in items")
+      td {{item.comment}}
+      td {{item.source}}
+      td {{item.link}}
+      td Buttons
+button.btn.btn-primary.fab(ng-click="addItem()")
+  span.glyphicon.glyphicon-plus(aria-hidden="true" title="Add Item")
+  span.sr-only Add Item
