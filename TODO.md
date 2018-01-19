@@ -17,15 +17,8 @@
 		* Darstellung Player
 		* Status
 	* karten tabelle
-		* load table
-		* edit
-		* delete
 		* sort
 		* filter
-		* add
-	* einstellungen (inputs, save)
-		* load settings
-		* edit
 	* write-card
 	* new-card
 		* cancel

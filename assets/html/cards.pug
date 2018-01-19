@@ -7,11 +7,12 @@ table.table.table-striped
       th Link
       th *
   tbody
-    tr(ng-repeat="item in items")
+    tr(ng-repeat="item in ctrl.items")
       td {{item.comment}}
       td {{item.source}}
       td {{item.link}}
       td Buttons
-button.btn.btn-primary.fab(ng-click="addItem()")
+button.btn.btn-primary.fab(ng-click="ctrl.addItem()")
   span.glyphicon.glyphicon-plus(aria-hidden="true" title="Add Item")
   span.sr-only Add Item
+.spinner.lowleft(ng-show="ctrl.loading")

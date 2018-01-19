@@ -6,11 +6,13 @@ table.table.table-striped
       th Value
       th *
   tbody
-    tr(ng-repeat="item in settings")
+    tr(ng-repeat="item in ctrl.settings")
       td {{item.key}}
       td 
-        input(id="item.key" value="item.value")
+        input(id="item.key" value="item.value" ng-change="item.changed = true")
       td 
-        button.btn(ng-show="item.changed" ng-click="item.save()")
+        button.btn(ng-show="item.changed && !item.saving" ng-click="item.save()")
          span.glyphicon.glyphicon-disk(aria-hidden="true" title="Save Setting")
           span  Save
+        .spinner(ng-show="item.saving")
+.spinner.lowleft(ng-show="ctrl.loading")
