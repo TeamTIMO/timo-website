@@ -4,7 +4,20 @@
 * templates
 	* start
 	* new-card
+		* form
+		* buttons
+			* cancel
+			* save
 	* write-card
+		* on call send to io server > prep for write
+			* text preparing...
+		* on ok show instructions
+			* text place card
+		* listen for io > card detected
+			* text card OK, writing
+		* listen for io > card written
+			* text now remove card
+			* activate close button
 
 * controllers
 	* main
